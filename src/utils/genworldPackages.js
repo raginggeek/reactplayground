@@ -1,6 +1,6 @@
-const ENDPOINT = 'http://dashboard.aesir.net/world/json'
+const ENDPOINT = 'http://dashboard.aesir.net/world/json';
 
-export function getProfiles() {
+export function getPackages() {
     return fetch(ENDPOINT)
         .then(res => res.json())
         .catch(err=> {
